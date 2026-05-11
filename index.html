@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CALC — SYS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="scanlines"></div>
+
+    <!-- Header -->
+    <div class="calc-header">
+      <span class="calc-label">CALC &mdash; SYS</span>
+      <div class="calc-status">
+        <span class="status-dot"></span>
+        <span class="status-dot"></span>
+        <span class="status-dot active"></span>
+      </div>
+    </div>
+
+    <!-- Display -->
+    <div class="display">
+      <div class="expression" id="expression"></div>
+      <div class="result" id="result">0</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <!-- Row 1 -->
+      <button class="btn btn-clear"    data-type="clear"    title="Limpar (Esc)">AC</button>
+      <button class="btn btn-special"  data-type="toggle"   title="+/−">+/−</button>
+      <button class="btn btn-special"  data-type="percent"  title="Porcentagem (%)">%</button>
+      <button class="btn btn-operator" data-type="operator" data-value="÷" title="Dividir (/)">÷</button>
+
+      <!-- Row 2 -->
+      <button class="btn btn-number"   data-type="number"   data-value="7">7</button>
+      <button class="btn btn-number"   data-type="number"   data-value="8">8</button>
+      <button class="btn btn-number"   data-type="number"   data-value="9">9</button>
+      <button class="btn btn-operator" data-type="operator" data-value="×" title="Multiplicar (*)">×</button>
+
+      <!-- Row 3 -->
+      <button class="btn btn-number"   data-type="number"   data-value="4">4</button>
+      <button class="btn btn-number"   data-type="number"   data-value="5">5</button>
+      <button class="btn btn-number"   data-type="number"   data-value="6">6</button>
+      <button class="btn btn-operator" data-type="operator" data-value="−" title="Subtrair (-)">−</button>
+
+      <!-- Row 4 -->
+      <button class="btn btn-number"   data-type="number"   data-value="1">1</button>
+      <button class="btn btn-number"   data-type="number"   data-value="2">2</button>
+      <button class="btn btn-number"   data-type="number"   data-value="3">3</button>
+      <button class="btn btn-operator" data-type="operator" data-value="+" title="Somar (+)">+</button>
+
+      <!-- Row 5 -->
+      <button class="btn btn-number btn-zero" data-type="number"   data-value="0">0</button>
+      <button class="btn btn-special"         data-type="decimal"  title="Decimal (.)">.</button>
+      <button class="btn btn-equals"          data-type="equals"   title="Calcular (Enter)">=</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="calc-footer">
+      <span>v1.0.0</span>
+      <span>SYS ONLINE</span>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
